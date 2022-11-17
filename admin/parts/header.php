@@ -1,3 +1,6 @@
+<?php
+require __DIR__ . '/config.php';
+?>
 <!doctype html>
 <html lang="en">
 
