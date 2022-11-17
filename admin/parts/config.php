@@ -10,5 +10,5 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
-    echo "<h1>Error: " . $e->getMessage() . "</h1>";
+    echo "<h1>Connection Error: " . $e->getMessage() . "</h1>";
 }
