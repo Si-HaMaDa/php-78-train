@@ -109,3 +109,21 @@ require __DIR__ . '/config.php';
                 <?php require 'sideNav.php' ?>
             </nav>
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+                <?php if (!empty($_SESSION['success'])) : ?>
+                    <div class="my-5 alert alert-success">
+                        <?php
+                        echo $_SESSION['success'];
+                        $_SESSION['success'] = null;
+                        ?>
+                    </div>
+                <?php endif; ?>
+
+                <?php if (!empty($_SESSION['error'])) : ?>
+                    <div class="my-5 alert alert-danger">
+                        <?php
+                        echo $_SESSION['error'];
+                        $_SESSION['error'] = null;
+                        ?>
+                    </div>
+                <?php endif; ?>
