@@ -13,3 +13,5 @@ try {
 } catch (PDOException $e) {
     echo "<h1>Connection Error: " . $e->getMessage() . "</h1>";
 }
+
+$errors = [];

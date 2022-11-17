@@ -1,6 +1,5 @@
 <?php
 require 'parts/header.php';
-$errors = [];
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = $_POST['name'];
@@ -23,9 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 
+include 'parts/error-messages.php';
 ?>
-
-<?php include 'parts/validation-errors.php'; ?>
 
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
 
